@@ -6,11 +6,8 @@ from django.db import IntegrityError
 
 # Create your views here.
 
-
 def home(request):
     return render(request, 'home.html')
-
-
 def signup(request):
 
     if request.method == 'GET':
