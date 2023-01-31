@@ -4,10 +4,9 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
 from .forms import TaskForm
+from .models import Task
 
 # Create your views here.
-
-
 def home(request):
     return render(request, 'home.html')
 
@@ -36,7 +35,8 @@ def signup(request):
         })
 
 def tasks(request):
-    return render(request, 'tasks.html')
+    tasks = Task.objects.filter(user=request.user, datecompleted__isnull=True)
+    return render(request, 'tasks.html', {"tasks": tasks})
 
 def create_task(request):
 

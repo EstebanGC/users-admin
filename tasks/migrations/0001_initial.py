@@ -18,6 +18,11 @@ class Migration(migrations.Migration):
             name='Task',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('title', models.CharField(max_length=200)),
+                ('description', models.TextField(max_length=1000)),
+                ('created', models.DateTimeField(auto_now_add=True)),
+                ('datedcompleted', models.DateTimeField(blank=True, null=True)),
+                ('important', models.BooleanField(default=False)),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
