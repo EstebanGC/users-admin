@@ -1,7 +1,7 @@
 
 # 🌀 Django App
 
-This is an app in python using the Django framework to model tasks and authentication with tokens.
+This is an app in Python using the Django framework to model tasks and authentication with tokens and MySQL.
 
 
 ## 🚀 About Me
