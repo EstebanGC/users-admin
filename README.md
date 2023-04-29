@@ -5,7 +5,7 @@ This is an app in Python using the Django framework to model tasks and authentic
 
 
 ## 🚀 About Me
-I'm a developer focused on backend with knowledge in Java with Spring Boot, Javascript with NodeJS and a little of NestJS and these last days (Feb/2023) in Python with Django.
+I'm a developer focused on backend with knowledge in Java with Spring Boot, Javascript with NodeJS/NestJS and Python with Django.
 
 
 ## 🔥 Running the project 
